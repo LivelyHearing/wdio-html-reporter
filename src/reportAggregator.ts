@@ -131,6 +131,7 @@ class ReportAggregator {
                     } else {
                         metrics.end = end.utc().format(timeFormat);
                     }
+                    // @ts-ignore
                     suites.push(suiteInfo);
                 }
             } catch (ex) {
@@ -169,6 +170,7 @@ class ReportAggregator {
         this.reportFile = path.join(process.cwd(), this.options.outputDir, this.options.filename);
         if (this.options.removeOutput) {
             for (let i = 0; i < suites.length; i++) {
+                // @ts-ignore
                 let suite = suites[i].suite;
                 if (suite && suite.tests) {
                     for (let j = 0; j < suite.tests.length; j++) {
