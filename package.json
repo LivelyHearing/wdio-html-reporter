@@ -1,6 +1,6 @@
 {
   "name": "@jabrahearing/wdio-html-reporter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "FORKED: WebdriverIO report plugin. Create an HTML formatted report. compatible with webdriverio version 7",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
